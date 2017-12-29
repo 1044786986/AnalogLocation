@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/SearchView"
+        app:queryHint="搜地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/SpaceBgColor"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <ListView
+        android:id="@+id/lvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
